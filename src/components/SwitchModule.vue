@@ -4,9 +4,14 @@
 		  :class = "{active: checked, large: large, small: small}" 
 		  @click="checked = !checked">
 			<div 
+			  v-if = "checked"
 			  :class = "{large: large, small: small}"
 			  class="before"
 			  :style = "{ background: this.color}"></div>
+			<div 
+			  v-else
+			  :class = "{large: large, small: small}"
+			  class="before"></div>  
 			<div 
 			  :class="{large: large, small: small}"
 			  class="circle"

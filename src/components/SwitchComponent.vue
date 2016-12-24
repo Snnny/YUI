@@ -6,8 +6,17 @@
 			</div>
 			<div slot="custom">
 				<switch-module :switch="switchConfig"></switch-module>
+				<h1 class="argu">说明：</h1>
+				<p class="msg">
+					props:["switch"] <br>
+					可选参数<br>
+					size:large,small<br>
+					color:背景<br>
+					checked:默认选中
+				</p>
 			</div>
 		</item-header>
+
 	</div>
 </template>
 
@@ -15,10 +24,6 @@
 	@function rem($px, $base-font-size:75){
 		@return ($px / $base-font-size ) * 1rem;
 	}
-
-	$light-green:  #31c27c;
-	$light-green2:  #3cc51c;
-
 	@mixin font-dpr2($font-size){
 		font-size: $font-size / 2;
 		[data-dpr="2"] & {
@@ -30,7 +35,15 @@
 	}
 
 	#item {
-		height: 100%
+		height: 100%;
+		.argu {
+			padding: rem(20);
+			@include font-dpr2(35px)
+		}
+		p.msg {
+			padding: rem(20);
+			@include font-dpr2(30px)
+		}
 	}
 </style>
 <script>
@@ -43,7 +56,8 @@ import SwitchModule from './SwitchModule.vue'
 				msg: {
 					title: 'Switch',
 					default: '1、switch 默认样式',
-					custom: '2、switch 自定义样式'
+					custom: '2、switch 自定义样式',
+					cn: '切换'
 				},
 				switchConfig: {
 					checked: false,

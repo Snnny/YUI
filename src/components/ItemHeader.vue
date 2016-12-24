@@ -5,7 +5,7 @@
 				<--返回
 			</router-link>	
 			<h2>{{content.title}} 组件</h2>
-			<small>切换组件，支持自定义属性</small>
+			<small>{{content.cn}}组件，支持自定义属性</small>
 		</div>
 		<div id="default" class="title">
 			{{content.default}}

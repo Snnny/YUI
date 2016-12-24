@@ -5,6 +5,7 @@ Vue.use(vueRouter)
 
 import HeaderComponent from '../components/HeaderComponent.vue'
 import SwitchComponent from '../components/SwitchComponent.vue'
+import LoadComponent from '../components/LoadComponent.vue'
 
 export default new vueRouter({
 	routes: [
@@ -17,6 +18,10 @@ export default new vueRouter({
 		{
 			path: '/switch',
 			component: SwitchComponent
+		},
+		{
+			path: '/loading',
+			component: LoadComponent
 		}
 	]
 })
