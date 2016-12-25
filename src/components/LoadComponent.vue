@@ -10,6 +10,8 @@
 			props:["load"] <br>
 				可选参数<br>
 				color:字体<br>
+				initWord:加载前字 <br>
+				loadWord:加载后字 <br>
 			</p>
 		</div>
 	</item-header>
