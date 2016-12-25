@@ -63,6 +63,7 @@
 			position: absolute;
 			width: rem(6);
 			height: rem(6);
+			-webkit-border-radius: 50%;
 			border-radius: 50%;
 			background: #000;
 			&:nth-child(1){
