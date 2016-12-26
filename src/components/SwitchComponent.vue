@@ -20,7 +20,7 @@
 	</div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	@function rem($px, $base-font-size:75){
 		@return ($px / $base-font-size ) * 1rem;
 	}

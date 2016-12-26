@@ -3,7 +3,7 @@
 		<h1>这是百度新闻</h1>
 	</div>
 </template>
-<style>
+<style scoped>
 	.box{
 		min-height:100px;
 	}

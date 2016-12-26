@@ -4,7 +4,7 @@
 	</div>
 	
 </template>
-<style>
+<style scoped>
 	.box{
 		min-height:100px;
 	}
