@@ -67,7 +67,14 @@ $light-green2:  #3cc51c;
 		@include font-dpr2(35px)
 	}
 }
-
+.argu {
+	padding: rem(20);
+	@include font-dpr2(35px)
+}
+p.msg {
+	padding: rem(40);
+	@include font-dpr2(30px)
+}
 </style>
 <script>
 	export default {
